@@ -25,7 +25,8 @@
     "react-dom": "^18.2.0"
   },
   "browserslist": [
-    "lat 2 chrome version  ",
-    "lat 2 firefox version"
+    "last 2 Chrome versions",
+    "last 2 Edge versions",
+    "last 2 Firefox versions"
   ]
 }
