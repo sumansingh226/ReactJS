@@ -36,6 +36,8 @@ const Body = (() => {
 const RestroRentCard = (() => {
     return <div className="res-card">
         <h3> Meghna Food</h3>
+        <img className="res-img" width={"200px"} height={"200px"} src="https://www.vedantu.com/seo/content-images/0867b892-336b-456a-89e7-a6056614cc26.png" alt="" />
+
     </div>
 })
 const AppLayout = () => {

@@ -38,6 +38,10 @@ body{
   border-radius: 2px;
   background: gainsboro;
   }
+  res-img{
+  width: 150px;
+  height: 100%;
+  }
 
   .serachBar{
       flex-direction: row;
