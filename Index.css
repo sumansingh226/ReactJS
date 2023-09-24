@@ -28,16 +28,14 @@ body{
   }
 
 .res-card{
-  width: 200px;
-  height: 300px;
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
   text-align: center;
-  color: blue;
   border-radius: 2px;
-  background: gainsboro;
   }
+
+
   res-img{
   width: 150px;
   height: 100%;
@@ -49,7 +47,20 @@ body{
       padding: 10px;
       border: 1px solid gray;
       border-radius: 2px;
-      width: 30%;
-      float: right;
-
   }
+
+  .restorent-container
+  {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+  .res-card:hover
+  {
+    border: 2px solid yellowgreen;
+    cursor: pointer;
+    background: gainsboro;
+  }
+
