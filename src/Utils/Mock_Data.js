@@ -1,4 +1,4 @@
-const restorentsList = [
+const restorentsListData = [
     {
         "info": {
             "id": "723420",
@@ -5567,4 +5567,4 @@ const restorentsList = [
 
 ]
 
-export default restorentsList
+export default restorentsListData
