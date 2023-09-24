@@ -1,9 +1,12 @@
+import { APP_LOGO } from "../Utils/StringConstant";
+
  const Header = () => {
+     
     return (
         <div className="header">
             <div className="logo_container">
                 <img
-                    src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148986823.jpg?w=2000"
+                src={APP_LOGO}
                     alt=""
                     className="logo"
                 />
