@@ -1,21 +1,29 @@
-import  { useState ,useEffect,react } from "react";
+import { useState, useEffect, react } from "react";
 import restorentsListData from "../Utils/Mock_Data";
 import RestroRentCard from "./RestorentCard";
+import Simmer from "./Simmer";
 
 const Body = () => {
-
-   const [restorentsList , setRestorentsList] = useState(restorentsListData);
-
-  const handleFilterTopRatedRestorents = (()=>{
-        let filterTopRatedRes = restorentsList.filter((restorent)=> restorent.info.avgRating >= 4)
-        setRestorentsList([...filterTopRatedRes])
-
-  })
+  const [restorentsList, setRestorentsList] = useState([]);
 
   useEffect(() => {
-  console.log("use effect called");
-  }, [])
-  
+    fetchRestoretData();
+  }, []);
+
+  const fetchRestoretData = async () => {
+    let clearTimer = setTimeout(() => {
+      setRestorentsList([...restorentsListData]);
+      clearTimeout(clearTimer);
+    }, 3000);
+  };
+
+  const handleFilterTopRatedRestorents = () => {
+    let filterTopRatedRes = restorentsList.filter(
+      (restorent) => restorent.info.avgRating >= 4
+    );
+    setRestorentsList([...filterTopRatedRes]);
+  };
+
   return (
     <div>
       <div className="filter">
@@ -23,13 +31,20 @@ const Body = () => {
           Top Rated Restorents
         </button>
       </div>
-      <div className="restorent-container">
-        {restorentsList?.map((restorent) => {
-          return (
-            <RestroRentCard  key={restorent.info.id} restorentInfo={restorent} />
-          );
-        })}
-      </div>
+      {restorentsList.length === 0 ? (
+        <Simmer />
+      ) : (
+        <div className="restorent-container">
+          {restorentsList?.map((restorent) => {
+            return (
+              <RestroRentCard
+                key={restorent.info.id}
+                restorentInfo={restorent}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

@@ -1,11 +1,10 @@
-body{
+body {
   margin: 0;
-
 }
 .header {
   display: flex;
   justify-content: space-between;
-  border:  1px solid gray;
+  border: 1px solid gray;
   border-radius: 2px;
 }
 .logo {
@@ -13,53 +12,59 @@ body{
   height: 50px;
 }
 
-.nav_items >ul {
+.nav_items > ul {
   display: flex;
   list-style-type: none;
   gap: 35px;
   margin-right: 10px;
- 
 }
-.nav_items >ul >li{
-   padding:  10px 10px;
-   margin: 10px 10px;
-   font-size: 1rem;
-   font-weight: bold;
-  }
+.nav_items > ul > li {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
-.res-card{
+.res-card {
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
   text-align: center;
   border-radius: 2px;
-  }
+}
 
+.res-simmer-card {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+}
 
-  res-img{
+res-img {
   width: 150px;
   height: 100%;
-  }
+}
 
-  .serachBar{
-      flex-direction: row;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid gray;
-      border-radius: 2px;
-  }
+.serachBar {
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
 
-  .restorent-container
-  {
-    display: flex;
+.restorent-container {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  }
+}
 
-  .res-card:hover
-  {
-    border: 2px solid yellowgreen;
-    cursor: pointer;
-    background: gainsboro;
-  }
-
+.res-card:hover {
+  border: 2px solid yellowgreen;
+  cursor: pointer;
+  background: gainsboro;
+}
