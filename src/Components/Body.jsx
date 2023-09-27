@@ -1,4 +1,4 @@
-import  { useState ,react } from "react";
+import  { useState ,useEffect,react } from "react";
 import restorentsListData from "../Utils/Mock_Data";
 import RestroRentCard from "./RestorentCard";
 
@@ -11,6 +11,11 @@ const Body = () => {
         setRestorentsList([...filterTopRatedRes])
 
   })
+
+  useEffect(() => {
+  console.log("use effect called");
+  }, [])
+  
   return (
     <div>
       <div className="filter">
