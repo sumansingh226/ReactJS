@@ -121,3 +121,9 @@ res-img {
   height: 100%;
   background-color: aliceblue;
 }
+
+.user-card{
+  border: 1px solid black;
+  margin: 5px;
+  text-align: center;
+}
