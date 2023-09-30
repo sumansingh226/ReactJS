@@ -23,7 +23,9 @@ body {
   margin: 10px 10px;
   font-size: 1rem;
   font-weight: bold;
+  text-decoration: none;
 }
+
 .nav_items > ul > li:hover {
   color: blue;
   cursor: pointer;
@@ -46,6 +48,16 @@ body {
   width: 200px;
   height: 200px;
   background-color: aliceblue;
+}
+
+.menu-simmer {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  width: full;
+  height: 500px;
+  background-color: #dcdcdc;
 }
 
 res-img {
@@ -71,6 +83,14 @@ res-img {
   border: 2px solid yellowgreen;
   cursor: pointer;
   background: gainsboro;
+}
+.menu {
+  cursor: pointer;
+  background: gainsboro;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
 }
 
 .login-logout-ntn {
