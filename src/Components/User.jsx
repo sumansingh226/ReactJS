@@ -1,11 +1,11 @@
 import React from "react";
 
-const User = ({ name }) => {
+const User = ({ name, location, contact }) => {
   return (
     <div className="user-card">
       <h2>Name : {name}</h2>
-      <h3>Location : New delhi</h3>
-      <h4>Contact : summichauhan@twitter12</h4>
+      <h3>Location : {location}</h3>
+      <h4>Contact : {contact}</h4>
     </div>
   );
 };

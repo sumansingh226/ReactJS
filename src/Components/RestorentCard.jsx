@@ -12,7 +12,7 @@ const RestroRentCard = (props) => {
   } = props.restorentInfo.info;
 
   return (
-    <Link to={"/restorent/" + id} style={{ textDecoration: "none" }}>
+    <Link to={"/restorent/" + id} className={"linkStyle"}>
       <div className="res-card">
         <h3 style={{ margin: 0, color: "blue" }}>{name}</h3>
         <img

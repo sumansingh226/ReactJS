@@ -20,15 +20,25 @@ const Header = () => {
       <div className="nav_items">
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>{" "}
+            <Link to={"/"} className={"linkStyle"}>
+              Home
+            </Link>{" "}
           </li>
           <li>
-            <Link to={"/about"}>About</Link>
+            <Link to={"/about"} className={"linkStyle"}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact Us</Link>
+            <Link to={"/contact"} className={"linkStyle"}>
+              Contact Us
+            </Link>
           </li>
-          <li>Cart</li>
+          <li>
+            <Link to={"/cart"} className={"linkStyle"}>
+              Cart
+            </Link>
+          </li>
           <li className="login-logout-ntn" onClick={handleLoginLogout}>
             {loginBtn}
           </li>

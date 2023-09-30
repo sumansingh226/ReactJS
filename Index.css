@@ -127,3 +127,7 @@ res-img {
   margin: 5px;
   text-align: center;
 }
+
+.linkStyle {
+text-decoration: none; 
+}
