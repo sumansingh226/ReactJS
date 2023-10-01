@@ -122,12 +122,43 @@ res-img {
   background-color: aliceblue;
 }
 
-.user-card{
+.user-card {
   border: 1px solid black;
   margin: 5px;
   text-align: center;
 }
 
 .linkStyle {
-text-decoration: none; 
+  text-decoration: none;
+}
+
+.github-profile-card {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #dcdcdc;
+}
+
+.github-profile-card img {
+  width: 250px;
+}
+
+.github-profile-card h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.github-profile-card p {
+  margin-top: 10px;
+}
+
+.github-profile-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.github-profile-card li {
+  margin-bottom: 5px;
 }
