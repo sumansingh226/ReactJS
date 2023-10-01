@@ -25,8 +25,15 @@ class UserClass extends React.Component {
         }
     }
 
+    componentDidUpdate() {
+        console.log("componentDidUpdate");
+    }
+
+    componentWillUnmount() {
+        console.log("componentWillUnmount");
+    }
+
     render() {
-        console.log(this.state.user);
         // de-structure from props
         // const { name, location, contact } = this.props;
         //de-strcture from states
