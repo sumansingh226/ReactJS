@@ -6,11 +6,11 @@ const About = () => {
   return (
     <div>
       <h1 style={{ textAlign: "center", color: "blue" }}>About</h1>
-      <User
+      {/* <User
         name="Suman Singh function()"
         location="New delhi function()"
         contact={"sumansinghuser@123 function"}
-      />
+      /> */}
       <UserClass
         name="Suman Singh class"
         location="New delhi class"
