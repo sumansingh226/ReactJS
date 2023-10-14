@@ -1,27 +1,12 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import restorentsListData from "../Utils/Mock_Data";
 import { CDN_URL } from "../Utils/StringConstant.js";
+import useRestMenu from "../Utils/useRestMenu";
 import RestorentShimmer from "./RestorentShimmer";
 
 const RestorentsMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
   const { resId } = useParams();
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    let clearTimer = setTimeout(() => {
-      const restorent = restorentsListData?.find(
-        (res) => res.info.id === resId
-      );
-      setResInfo(restorent);
-      clearTimeout(clearTimer);
-    }, 3000);
-  };
+  const resInfo = useRestMenu(resId);
 
   if (resInfo === null) {
     return <RestorentShimmer />;
